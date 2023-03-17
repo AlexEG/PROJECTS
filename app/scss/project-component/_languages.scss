@@ -1,0 +1,32 @@
+.project__inner-container__project-info {
+  // outline: 2px red solid; ////////
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding-block: 5px;
+
+  .date {
+    p {
+      color: hsla(0, 0%, 100%, 0.5);
+      font-size: 0.9rem;
+      margin-bottom: 2px;
+      span {
+        padding-right: 2px;
+        font-size: 1rem;
+      }
+
+      &:nth-of-type(1) span {
+        color: hsla(145, 100%, 50%, 0.6);
+      }
+      &:nth-of-type(2) span {
+        color: hsla(342, 100%, 50%, 0.6);
+      }
+    }
+  }
+
+  .languages {
+    img {
+      margin-inline: 4px;
+    }
+  }
+}
