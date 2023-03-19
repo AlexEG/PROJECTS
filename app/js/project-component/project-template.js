@@ -4,7 +4,7 @@ function project(
   shields,
   YT_id,
   Start,
-  Complete,
+  Status,
   languages,
   description,
   code,
@@ -59,8 +59,8 @@ function project(
     </div>
     <div class="project__inner-container__project-info">
       <div class="date">
-        <p><span>Start :</span>${Start} 2023</p>
-        <p><span>Complete :</span>${Complete} 2023</p>
+        <p><span>Start :</span> ${Start} 2023</p>
+        <p><span>Project Status :</span> ${Status}</p>
       </div>
       <div class="languages">
         <img src="https://skillicons.dev/icons?i=${languages}" alt="Languages and tools" />
@@ -88,7 +88,7 @@ function project(
 //   `YT_id`,
 //   `YT_title`,
 //   `Start`,
-//   `Complete`,
+//   `Status`,
 //   `languages`,
 //   `description`,
 //   `code`,
