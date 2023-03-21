@@ -11,7 +11,7 @@ mainContaner.innerHTML += project(
   `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, labore. Eum, officiis doloribus? Tempore ipsam non tempora? Quaerat, accusantium quia officiis cumque porro veritatis quae dolor expedita, nobis a quas.`,
   `https://github.com/AlexEG/myTools`,
   `https://alexeg.github.io/myTools/`,
-  `/History/myTools`
+  `./History/myTools`
 );
 
 mainContaner.innerHTML += project(
@@ -25,5 +25,5 @@ mainContaner.innerHTML += project(
   `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, labore. Eum, officiis doloribus? Tempore ipsam non tempora? Quaerat, accusantium quia officiis cumque porro veritatis quae dolor expedita, nobis a quas.`,
   `https://github.com/AlexEG/me`,
   `https://alexeg.github.io/me/`,
-  `/History/me`
+  `./History/me`
 );
