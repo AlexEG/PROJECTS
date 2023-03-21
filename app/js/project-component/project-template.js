@@ -1,7 +1,6 @@
 function project(
   title,
   wakatime,
-  shields,
   YT_id,
   Start,
   Status,
@@ -20,31 +19,31 @@ function project(
       alt="wakatime"
     />
     <img
-      src="https://img.shields.io/github/commit-activity/m/AlexEG/${shields}?color=%23309930&style=plastic"
+      src="https://img.shields.io/github/commit-activity/m/AlexEG/${title}?color=%23309930&style=plastic"
       alt="GitHub commit activity"
     />
     <img
-      src="https://img.shields.io/github/languages/count/AlexEG/${shields}?style=plastic"
+      src="https://img.shields.io/github/languages/count/AlexEG/${title}?style=plastic"
       alt="GitHub language count"
     />
     <img
-      src="https://img.shields.io/github/languages/top/AlexEG/${shields}?color=%239900ff&style=plastic"
+      src="https://img.shields.io/github/languages/top/AlexEG/${title}?color=%239900ff&style=plastic"
       alt="top language"
     />
     <img
-      src="https://img.shields.io/github/license/AlexEG/${shields}?color=%2300dd&style=plastic"
+      src="https://img.shields.io/github/license/AlexEG/${title}?color=%2300dd&style=plastic"
       alt="GitHub Project license"
     />
     <img
-      src="https://img.shields.io/github/directory-file-count/AlexEG/${shields}?&style=plastic"
+      src="https://img.shields.io/github/directory-file-count/AlexEG/${title}?&style=plastic"
       alt="GitHub contributors"
     />
     <img
-      src="https://img.shields.io/github/repo-size/AlexEG/${shields}?color=%23ff0055&style=plastic"
+      src="https://img.shields.io/github/repo-size/AlexEG/${title}?color=%23ff0055&style=plastic"
       alt="GitHub repo size"
     />
     <img
-      src="https://img.shields.io/github/languages/code-size/AlexEG/${shields}?color=5500bb&style=plastic"
+      src="https://img.shields.io/github/languages/code-size/AlexEG/${title}?color=5500bb&style=plastic"
       alt="GitHub code size in bytes"
     />
   </div>

@@ -1,13 +1,3 @@
-function listArr(item) {
-  return `
-  <li>
-  <p>
-    ${item}
-  </p>
-</li>`;
-}
-// TODO remove " , " from HTML
-
 function projectHistoryComponent(
   YT,
   dd,
@@ -18,8 +8,15 @@ function projectHistoryComponent(
   deletions,
   commitTitle,
   SHA,
-  list
+  whatChange,
+  autoscreenshot
 ) {
+  let whatChangeHTML = "";
+  function addText(text) {
+    whatChangeHTML += `<li><p>${text}</p></li>`;
+  }
+  whatChange.map((ele) => addText(ele));
+
   return `
   <section>
   <div class="yt-autoscreenshot">
@@ -28,7 +25,25 @@ function projectHistoryComponent(
         src="https://www.youtube.com/embed/${YT}"
         frameborder="0"
         allowfullscreen></iframe>
-      <button>See Auto ScreenShots</button>
+
+        <div class="see-auto-screenshots" style="display: none">
+          <div class="wrapper-screenshots">
+            <div class="screenshot-in-view">
+              <img src="" alt="Auto Screenshot" />
+              <p class="img-number"><span>1</span> / <span></span></p>
+              <a class="prev">&#10094;</a>
+              <a class="next">&#10095;</a>
+              <button class="close-btn">x</button>
+            </div>
+            <div class="screenshots">
+              ${autoscreenshot.map(
+                (ele) => `<img src="${ele}" alt="Auto Screenshot" />`
+              )}
+            </div>
+          </div>
+        </div>
+
+      <button class="open-btn">See Auto ScreenShots</button>
     </div>
   </div>
   <div class="commit-description">
@@ -107,7 +122,7 @@ function projectHistoryComponent(
     </div>
     <div class="commit-description__summary">
       <ul>
-      ${list.map((ele) => listArr(ele))}
+      ${whatChangeHTML}
       </ul>
     </div>
   </div>
@@ -125,5 +140,11 @@ function projectHistoryComponent(
 //   `deletions`,
 //   `commitTitle`,
 //   `SHA`,
-//   [`item1`, `item2`, `item3`]
+//   [`whatChange1`, `whatChange2`, `whatChange3`],
+//   [
+//   `./Mar19th2023/Screenshot_1.png`,
+//   `./Mar19th2023/Screenshot_2.png`,
+//   `./Mar19th2023/Screenshot_8.png`,
+//   `./Mar19th2023/Screenshot_10.png`,
+// ]
 // );
