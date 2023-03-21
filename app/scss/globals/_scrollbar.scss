@@ -1,4 +1,4 @@
-body {
+body.project-history {
   &::-webkit-scrollbar {
     width: 0;
     height: 0;
@@ -11,4 +11,27 @@ body {
 
   // scrollbar for firefox
   scrollbar-width: none;
+}
+
+body.project-history .see-auto-screenshots .screenshots {
+  &::-webkit-scrollbar {
+    width: 2em;
+    height: 1em;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: hsla(261, 100%, 20%, 0.39);
+    border-radius: 100vw;
+    margin-block: 0.5em;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: hsla(261, 100%, 20%, 0.69);
+    border: 0.05em solid hsla(261, 100%, 50%, 0.69);
+    border-radius: 100vw;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: hsla(261, 100%, 50%, 0.69);
+  }
 }

@@ -115,15 +115,15 @@ function projectHistoryComponent(
   `;
 }
 
-projectHistoryComponent(
-  `YT`,
-  `dd`,
-  `mm`,
-  `month`,
-  `files`,
-  `additions`,
-  `deletions`,
-  `commitTitle`,
-  `SHA`,
-  [`item1`, `item2`, `item3`]
-);
+// projectHistoryComponent(
+//   `YT`,
+//   `dd`,
+//   `mm`,
+//   `month`,
+//   `files`,
+//   `additions`,
+//   `deletions`,
+//   `commitTitle`,
+//   `SHA`,
+//   [`item1`, `item2`, `item3`]
+// );
