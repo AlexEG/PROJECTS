@@ -1,4 +1,5 @@
-body.project-history nav {
+body.project-history nav,
+body.project-code-analytics nav {
   // background-color: hsla(0, 0%, 88%, 0.185);
   height: 40px;
   position: fixed;
@@ -11,7 +12,7 @@ body.project-history nav {
   border-bottom-color: rgba(255, 255, 255, 0.116);
 
   a {
-    // outline: 1px solid red;   /////
+    // outline: 1px solid red; /////
     text-decoration: none;
     color: #00b1dd;
     font-size: 1.1rem;

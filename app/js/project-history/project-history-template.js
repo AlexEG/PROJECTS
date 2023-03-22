@@ -1,13 +1,10 @@
 function projectHistoryComponent(
+  projectName,
+  SHA,
   YT,
-  dd,
-  mm,
-  month,
   files,
   additions,
   deletions,
-  commitTitle,
-  SHA,
   whatChange,
   autoscreenshot
 ) {
@@ -17,8 +14,46 @@ function projectHistoryComponent(
   }
   whatChange.map((ele) => addText(ele));
 
+  let autoscreenshotHTML = "";
+  function addImage(screenshot) {
+    autoscreenshotHTML += `<img src="${screenshot}" alt="Auto Screenshot" />`;
+  }
+  autoscreenshot.map((ele) => addImage(ele));
+
+  // GITHUB API
+  fetch(`https://api.github.com/repos/AlexEG/PROJECTS/git/commits/${SHA}`)
+    //  Project's Create Date
+    .then((response) => response.json())
+    .then((data) => {
+      // Commit Date
+      document.querySelector(
+        `#main > section#SHA_${SHA.slice(
+          0,
+          7
+        )} > div.commit-description > p.commit-time > time`
+      ).innerHTML = `${data.author.date.slice(0, 10)}`;
+
+      // Commit Title
+      document.querySelector(
+        `#main > section#SHA_${SHA.slice(
+          0,
+          7
+        )} div.commit-description > div.github-commit > h2`
+      ).innerHTML = `${data.message}`;
+    });
+
+  fetch(`https://api.github.com/repos/AlexEG/${projectName}/commits`)
+    .then((response) => response.json())
+    .then((data) => {
+      date.forEach((obj) => {
+        console.log(obj);
+      });
+
+      console.log("🚀 ~ file: index.js:5 ~ .then ~ data:", data);
+    });
+
   return `
-  <section>
+  <section id="SHA_${SHA.slice(0, 7)}">
   <div class="yt-autoscreenshot">
     <div class="wrapper">
       <iframe
@@ -36,19 +71,17 @@ function projectHistoryComponent(
               <button class="close-btn">x</button>
             </div>
             <div class="screenshots">
-              ${autoscreenshot.map(
-                (ele) => `<img src="${ele}" alt="Auto Screenshot" />`
-              )}
+              ${autoscreenshotHTML}
             </div>
           </div>
         </div>
 
-      <button class="open-btn">See Auto ScreenShots</button>
+      <button class="open-btn">See Work in Progress Updates</button>
     </div>
   </div>
   <div class="commit-description">
     <p class="commit-time">
-      <time datetime="2023-${mm}-${dd}">${month} ${dd}, 2023</time>
+      <time></time>
     </p>
     <p class="commit-title">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
@@ -62,7 +95,7 @@ function projectHistoryComponent(
       <span>+${additions}</span>additions<span>-${deletions}</span>deletions
     </p>
     <div class="github-commit">
-      <h2>${commitTitle}</h2>
+      <h2></h2>
       <div class="github-commit__view-btn">
         <button aria-label="Copy the full SHA" class="copy-sha tooltip">
           <input
