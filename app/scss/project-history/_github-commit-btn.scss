@@ -7,6 +7,10 @@ body.project-history main section .commit-description .github-commit {
   margin-block: 20px;
   background-color: hsla(0, 0%, 100%, 0.04);
   border-radius: 10px;
+  transition: box-shadow 200ms ease-in-out;
+  &:hover {
+    box-shadow: 0 0 5px 0 rgb(225, 0, 255);
+  }
 
   h2 {
     // outline: 1px solid red; //////
@@ -15,8 +19,9 @@ body.project-history main section .commit-description .github-commit {
     line-height: 1.7;
   }
   &__view-btn {
-    // outline: 1px solid red; //////
+    // outline: 1px solid rgb(43, 255, 0); //////
     height: 35px;
+
     .tooltip:hover {
       &::before {
         content: "";
@@ -42,6 +47,8 @@ body.project-history main section .commit-description .github-commit {
     }
 
     .tooltip {
+      // outline: 1px solid red; //////
+
       transition: background-color 200ms;
       &:hover {
         background-color: hsla(0, 0%, 72%, 0.26);
@@ -51,6 +58,8 @@ body.project-history main section .commit-description .github-commit {
     button,
     a:nth-of-type(1),
     a:nth-of-type(2) {
+      // outline: 1px solid red; //////
+
       cursor: pointer;
       background-color: transparent;
       position: relative;
@@ -60,6 +69,8 @@ body.project-history main section .commit-description .github-commit {
     }
 
     svg {
+      // outline: 1px solid red; //////
+
       filter: invert(50%);
       height: 16px;
       width: 16px;
