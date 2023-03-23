@@ -25,6 +25,10 @@
         color: hsla(313, 100%, 55%, 0.7);
       }
       &:nth-of-type(4) span {
+        color: hsl(0, 0%, 100%);
+        filter: drop-shadow(0 0 7px rgba(255, 0, 0, 0.521));
+      }
+      &:nth-of-type(5) span {
         color: hsla(249, 100%, 58%, 0.938);
       }
     }

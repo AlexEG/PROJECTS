@@ -5,29 +5,40 @@ function project(projectName, wakatime, YT_id, Status, languages) {
   }
   languages.map((ele) => addIcon(ele));
 
-  // GITHUB API
+  //? GITHUB API
   fetch(`https://api.github.com/repos/AlexEG/${projectName}`)
-    //  Project's Create Date
+    //*  Project's Create Date
     .then((response) => response.json())
     .then((data) => {
       document.querySelector(
         `#projectsContainer > section.${projectName} > div.project__inner-container > div.project__inner-container__project-info > div.date > p:nth-child(1) > span`
       ).innerHTML = `${data.created_at.slice(0, 10)}`;
 
-      // Last Update
+      //* Last Update
       document.querySelector(
         `#projectsContainer > section.${projectName} > div.project__inner-container > div.project__inner-container__project-info > div.date > p:nth-child(2) > span`
       ).innerHTML = `${data.updated_at.slice(0, 10)}`;
 
-      // license
+      //* license
       document.querySelector(
         `#projectsContainer > section.${projectName} > div.project__inner-container > div.project__inner-container__project-info > div.date > p:nth-child(3) > span`
       ).innerHTML = `${data.license.name}`;
 
-      // Project's description
+      //* Project's description
       document.querySelector(
         `#projectsContainer > section.${projectName} > div.project__inner-container > div.project__inner-container__description > article`
       ).innerHTML = `${data.description}`;
+    });
+
+  //* Commits number
+  fetch(
+    `https://api.github.com/repos/AlexEG/${projectName}/commits?page=1&per_page=100`
+  )
+    .then((response) => response.json())
+    .then((data) => {
+      document.querySelector(
+        `#projectsContainer > section.${projectName} > div.project__inner-container > div.project__inner-container__project-info > div.date > p:nth-child(4) > span`
+      ).innerHTML = `{ ${data.length} }`;
     });
 
   return `
@@ -81,6 +92,7 @@ function project(projectName, wakatime, YT_id, Status, languages) {
         <p>Created at : <span></span></p>
         <p>Last Update : <span></span></p>
         <p>License : <span></span></p>
+        <p>Commits Number : <span></span></p>
         <p>Project Status : <span>${Status}</span></p>
       </div>
       <div class="languages">

@@ -2,9 +2,6 @@ function projectHistoryComponent(
   projectName,
   SHA,
   YT,
-  files,
-  additions,
-  deletions,
   whatChange,
   autoscreenshot
 ) {
@@ -42,14 +39,35 @@ function projectHistoryComponent(
       ).innerHTML = `${data.message}`;
     });
 
-  fetch(`https://api.github.com/repos/AlexEG/${projectName}/commits`)
+  ///
+
+  ///
+  fetch(`https://api.github.com/repos/AlexEG/${projectName}/commits/${SHA}`)
     .then((response) => response.json())
     .then((data) => {
-      date.forEach((obj) => {
-        console.log(obj);
-      });
+      // number of changed files
+      document.querySelector(
+        `#main > section#SHA_${SHA.slice(
+          0,
+          7
+        )} > div.commit-description > p.commit-title > span:nth-child(2)`
+      ).innerHTML = `${data.files.length}`;
 
-      console.log("🚀 ~ file: index.js:5 ~ .then ~ data:", data);
+      // additions lines of code
+      document.querySelector(
+        `#main > section#SHA_${SHA.slice(
+          0,
+          7
+        )} > div.commit-description > p.commit-title > span:nth-child(3)`
+      ).innerHTML = `+${data.stats.additions}`;
+
+      // deletions lines of code
+      document.querySelector(
+        `#main > section#SHA_${SHA.slice(
+          0,
+          7
+        )} > div.commit-description > p.commit-title > span:nth-child(4)`
+      ).innerHTML = `-${data.stats.deletions}`;
     });
 
   return `
@@ -91,8 +109,8 @@ function projectHistoryComponent(
           />
         </g>
       </svg>
-      ${files} Changed files
-      <span>+${additions}</span>additions<span>-${deletions}</span>deletions
+      <span>111111</span>Changed files
+      <span></span>additions<span></span>deletions
     </p>
     <div class="github-commit">
       <h2></h2>
