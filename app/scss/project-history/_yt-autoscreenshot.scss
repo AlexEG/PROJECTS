@@ -6,7 +6,7 @@ body.project-history main section .yt-autoscreenshot {
   padding-block: 15px;
 
   .wrapper {
-    // background-color: red;   //////
+    // background-color: red; //////
     height: 100%;
     width: 100%;
     max-width: 600px;
@@ -24,6 +24,7 @@ body.project-history main section .yt-autoscreenshot {
       display: block;
       margin-inline: auto;
       cursor: pointer;
+      margin-top: 5px;
     }
   }
 }
