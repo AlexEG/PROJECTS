@@ -18,7 +18,7 @@ function projectHistoryComponent(
   autoscreenshot.map((ele) => addImage(ele));
 
   // GITHUB API
-  fetch(`https://api.github.com/repos/AlexEG/PROJECTS/git/commits/${SHA}`)
+  fetch(`https://api.github.com/repos/AlexEG/${projectName}/git/commits/${SHA}`)
     //  Project's Create Date
     .then((response) => response.json())
     .then((data) => {
@@ -149,14 +149,14 @@ function projectHistoryComponent(
         </button>
         <a
           class="tooltip"
-          href="https://github.com/AlexEG/PROJECTS/commit/${SHA}"
+          href="https://github.com/AlexEG/${projectName}/commit/${SHA}"
           target="_blank"
           >${SHA.slice(0, 7)}</a
         >
         <a
           class="tooltip"
           class="browse-repo-history"
-          href="https://github.com/AlexEG/PROJECTS/tree/${SHA}"
+          href="https://github.com/AlexEG/${projectName}/tree/${SHA}"
           target="_blank"
           ><svg
             aria-hidden="true"

@@ -1,5 +1,15 @@
-// ( title, wakatime, shields, YT_id, Start, Status, languages, description, code, live, history )
+// ( title, wakatime, YT_id, Status, languages )
+
 // Status { On Track  -  On Hold  -  Done  -  CANCELLED}
+
+mainContaner.innerHTML += project(
+  `YourManga`,
+  `https://wakatime.com/badge/user/fbdfdc0f-d449-43dc-8090-ced03a22fe8c/project/19f61fe3-78ec-469f-8f4d-6158b7eb862e.svg
+  `,
+  `oKOU08tM7To`,
+  `On Hold`,
+  ["HTML", "TypeScript", "Sass", "Gulp", "Netlify-Dark"]
+);
 
 mainContaner.innerHTML += project(
   `myTools`,
@@ -18,13 +28,3 @@ mainContaner.innerHTML += project(
   `On Track`,
   ["TypeScript", "Sass", "JavaScript", "HTML", "Gulp"]
 );
-
-// // GITHUB API
-
-// fetch(`https://api.github.com/repos/AlexEG/Projects/commits`)
-//   .then((response) => response.json())
-//   .then((data) => {
-//     console.log(data);
-//   });
-
-// console.log("🚀 ~ file: index.js:24 ~ .then ~ description:");
