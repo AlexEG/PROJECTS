@@ -42,7 +42,7 @@ function project(projectName, wakatime, YT_id, Status, languages) {
     });
 
   return `
-  <section class="project ${projectName}">
+  <section id="projects_Home_${projectName}" class="project ${projectName}">
   <h2>${projectName}</h2>
   <div class="project__github-repo-info">
     <img
@@ -106,7 +106,8 @@ function project(projectName, wakatime, YT_id, Status, languages) {
       </article>
     </div>
     <div class="project__inner-container__github">
-      <a href="https://github.com/AlexEG/${projectName}">source code</a>
+
+      <a href="https://github.com/AlexEG/${projectName}"><img src="/assets/icons/Github-Dark.svg" alt="">source code</a>
       <a href="https://alexeg.github.io/${projectName}">Live review</a>
       <a href="./Code_Analytics/${projectName}">Code Analytics</a>
       <a href="./History/${projectName}">project-history</a>
@@ -119,14 +120,7 @@ function project(projectName, wakatime, YT_id, Status, languages) {
 // mainContaner.innerHTML += project(
 //   `projectName`,
 //   `wakatime`,
-//   `shields`,
 //   `YT_id`,
-//   `YT_projectName`,
-//   `Start`,
 //   `Status`,
 //   `languages`,
-//   `description`,
-//   `code`,
-//   `live`,
-//   `history`
 // );

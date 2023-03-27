@@ -17,6 +17,10 @@
     transition: background-color 200ms ease-in-out;
   }
 
+  img {
+    width: 20px;
+    transform: translate(-5px, 3px);
+  }
   a:nth-of-type(1):hover {
     background-color: hsla(303, 100%, 50%, 0.3);
     // color: red;
