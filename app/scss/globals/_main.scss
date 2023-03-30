@@ -4,4 +4,35 @@ body.projects-home {
   min-height: 150vh;
   padding-top: 200px;
   font-family: "Roboto", sans-serif;
+
+  .page-noti {
+    color: #fff;
+    position: absolute;
+    margin-inline: auto;
+    background-color: red;
+    padding: 10px 30px;
+    background-image: linear-gradient(90deg, red, blue);
+    visibility: hidden;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: not-ready 5s ease-in-out 3s 1 forwards;
+    @keyframes not-ready {
+      0% {
+        visibility: hidden;
+        top: -24px;
+      }
+      10% {
+        visibility: visible;
+        top: 15px;
+      }
+      90% {
+        visibility: visible;
+        top: 15px;
+      }
+      100% {
+        visibility: hidden;
+        top: -50px;
+      }
+    }
+  }
 }
