@@ -3,6 +3,30 @@ const main = document.querySelector("#main");
 projectHistoryMainContainer.innerHTML += main.innerHTML =
   projectHistoryComponent(
     `YourManga`,
+    `c7762418998e45f5b1004238d509d09e195b89c1`,
+    `8QfI65O-yAg`,
+    [
+      "Delete every single file",
+      "every style is Tailwind now",
+      "complete header aka manga cover + info static",
+      "complete manga cards! static",
+    ],
+    [
+      `./images/2023-4-2/Screenshot_3.png`,
+      `./images/2023-4-2/Screenshot_2.png`,
+      `./images/2023-4-2/Screenshot_4.png`,
+      `./images/2023-4-2/Screenshot_5.png`,
+      `./images/2023-4-2/Screenshot_6.png`,
+      `./images/2023-4-2/Screenshot_7.png`,
+      `./images/2023-4-2/Screenshot_8.png`,
+      `./images/2023-4-2/Screenshot_9.png`,
+      `./images/2023-4-2/Screenshot_10.png`,
+    ]
+  );
+
+projectHistoryMainContainer.innerHTML += main.innerHTML =
+  projectHistoryComponent(
+    `YourManga`,
     `37e6b4f8b72ce2c9bb2190c99f194882ddff91e2`,
     `oKOU08tM7To`,
     [
