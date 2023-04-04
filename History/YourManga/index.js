@@ -3,6 +3,52 @@ const main = document.querySelector("#main");
 projectHistoryMainContainer.innerHTML += main.innerHTML =
   projectHistoryComponent(
     `YourManga`,
+    `55db8d8a76021ac20887c5ecf291177da7890788`,
+    `XEMPPJ6tM2s`,
+    [
+      "add sticky sidebar",
+      "add previose Next btn",
+      "fix scrolling in the background when reader is open ",
+      "add Boy's Abyss first chapter",
+    ],
+    [
+      `./images/2023-4-4/Screenshot_1.png`,
+      `./images/2023-4-4/Screenshot_2.png`,
+      `./images/2023-4-4/Screenshot_3.png`,
+      `./images/2023-4-4/Screenshot_4.png`,
+      `./images/2023-4-4/Screenshot_5.png`,
+      `./images/2023-4-4/Screenshot_6.png`,
+      `./images/2023-4-4/Screenshot_7.png`,
+      `./images/2023-4-4/Screenshot_8.png`,
+    ]
+  );
+
+projectHistoryMainContainer.innerHTML += main.innerHTML =
+  projectHistoryComponent(
+    `YourManga`,
+    `1f7a719f084ffc1e0b323bcc583a5b009f27bd0a`,
+    `ce6Va4oJsKs`,
+    [
+      "render all manga card using JS",
+      "add functionality to quick review feature",
+      "custom scrollbar to manga reader",
+      "add btn to close reader && on click overlay will close",
+      "render each manga/chapter/images to one reader",
+    ],
+    [
+      `./images/2023-4-3/Screenshot_2.png`,
+      `./images/2023-4-3/Screenshot_3.png`,
+      `./images/2023-4-3/Screenshot_4.png`,
+      `./images/2023-4-3/Screenshot_5.png`,
+      `./images/2023-4-3/Screenshot_6.png`,
+      `./images/2023-4-3/Screenshot_7.png`,
+      `./images/2023-4-3/Screenshot_8.png`,
+    ]
+  );
+
+projectHistoryMainContainer.innerHTML += main.innerHTML =
+  projectHistoryComponent(
+    `YourManga`,
     `c7762418998e45f5b1004238d509d09e195b89c1`,
     `8QfI65O-yAg`,
     [
