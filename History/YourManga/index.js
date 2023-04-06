@@ -3,6 +3,38 @@ const main = document.querySelector("#main");
 projectHistoryMainContainer.innerHTML += main.innerHTML =
   projectHistoryComponent(
     `YourManga`,
+    `38dd0cefcb1aa6784d9346b42d26804605d3b89b`,
+    `cAiWW540wQE`,
+    [
+      "add hover state to sidebar",
+      "add search bar (does nothing)",
+      "auto channge valume Cover JS",
+    ],
+    [
+      `./images/2023-4-6/Screenshot_1.png`,
+      `./images/2023-4-6/Screenshot_2.png`,
+      `./images/2023-4-6/Screenshot_3.png`,
+      `./images/2023-4-6/Screenshot_4.png`,
+      `./images/2023-4-6/Screenshot_5.png`,
+      `./images/2023-4-6/Screenshot_6.png`,
+      `./images/2023-4-6/Screenshot_7.png`,
+      `./images/2023-4-6/Screenshot_8.png`,
+      `./images/2023-4-6/Screenshot_9.png`,
+      `./images/2023-4-6/Screenshot_10.png`,
+      `./images/2023-4-6/Screenshot_11.png`,
+      `./images/2023-4-6/Screenshot_12.png`,
+      `./images/2023-4-6/Screenshot_13.png`,
+      `./images/2023-4-6/Screenshot_14.png`,
+      `./images/2023-4-6/Screenshot_15.png`,
+      `./images/2023-4-6/Screenshot_16.png`,
+      `./images/2023-4-6/Screenshot_17.png`,
+      `./images/2023-4-6/Screenshot_18.png`,
+    ]
+  );
+
+projectHistoryMainContainer.innerHTML += main.innerHTML =
+  projectHistoryComponent(
+    `YourManga`,
     `55db8d8a76021ac20887c5ecf291177da7890788`,
     `XEMPPJ6tM2s`,
     [
