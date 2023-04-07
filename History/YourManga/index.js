@@ -3,6 +3,28 @@ const main = document.querySelector("#main");
 projectHistoryMainContainer.innerHTML += main.innerHTML =
   projectHistoryComponent(
     `YourManga`,
+    `de2058604288ea665f29916bed58284f0fac671d`,
+    `FJDKKZalZu8`,
+    [
+      "add 12 manga info",
+      "add functionality to next/previose btn (manga info)",
+    ],
+    [
+      `./images/2023-4-7/Screenshot_3.png`,
+      `./images/2023-4-7/Screenshot_4.png`,
+      `./images/2023-4-7/Screenshot_5.png`,
+      `./images/2023-4-7/Screenshot_6.png`,
+      `./images/2023-4-7/Screenshot_7.png`,
+      `./images/2023-4-7/Screenshot_8.png`,
+      `./images/2023-4-7/Screenshot_9.png`,
+      `./images/2023-4-7/Screenshot_10.png`,
+      `./images/2023-4-7/Screenshot_11.png`,
+      `./images/2023-4-7/Screenshot_12.png`,
+    ]
+  );
+projectHistoryMainContainer.innerHTML += main.innerHTML =
+  projectHistoryComponent(
+    `YourManga`,
     `38dd0cefcb1aa6784d9346b42d26804605d3b89b`,
     `cAiWW540wQE`,
     [
