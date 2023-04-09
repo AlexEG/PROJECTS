@@ -3,6 +3,26 @@ const main = document.querySelector("#main");
 projectHistoryMainContainer.innerHTML += main.innerHTML =
   projectHistoryComponent(
     `YourManga`,
+    `8c8028baf54f6b61080c49db9391d88413c9caea`,
+    `kaILrGK6lOM`,
+    ["change manga cover && background dynamically (spaghetti code)"],
+    [
+      `./images/2023-4-10/Screenshot_1.png`,
+      `./images/2023-4-10/Screenshot_2.png`,
+      `./images/2023-4-10/Screenshot_3.png`,
+      `./images/2023-4-10/Screenshot_4.png`,
+      `./images/2023-4-10/Screenshot_5.png`,
+      `./images/2023-4-10/Screenshot_6.png`,
+      `./images/2023-4-10/Screenshot_7.png`,
+      `./images/2023-4-10/Screenshot_8.png`,
+      `./images/2023-4-10/Screenshot_9.png`,
+      `./images/2023-4-10/Screenshot_10.png`,
+      `./images/2023-4-10/Screenshot_11.png`,
+    ]
+  );
+projectHistoryMainContainer.innerHTML += main.innerHTML =
+  projectHistoryComponent(
+    `YourManga`,
     `de2058604288ea665f29916bed58284f0fac671d`,
     `FJDKKZalZu8`,
     [
