@@ -3,6 +3,55 @@ const main = document.querySelector("#main");
 projectHistoryMainContainer.innerHTML += main.innerHTML =
   projectHistoryComponent(
     `YourManga`,
+    `4/14`,
+    `kaILrGK6lOM`,
+    [
+      "change manga cover && background dynamically (Works)",
+      "add manga cards dynamically from one Object",
+    ],
+    [
+      `./images/2023-4-14/Screenshot_2.png`,
+      `./images/2023-4-14/Screenshot_3.png`,
+      `./images/2023-4-14/Screenshot_4.png`,
+      `./images/2023-4-14/Screenshot_5.png`,
+      `./images/2023-4-14/Screenshot_6.png`,
+      `./images/2023-4-14/Screenshot_7.png`,
+      `./images/2023-4-14/Screenshot_8.png`,
+    ]
+  );
+
+projectHistoryMainContainer.innerHTML += main.innerHTML =
+  projectHistoryComponent(
+    `YourManga`,
+    `4/13`,
+    `kaILrGK6lOM`,
+    [
+      "Add Light/Dark Mode btn+(working)",
+      "sidebar is sticky using css",
+      "use Grid for layout",
+      "add Media Queries",
+      "make Search bar position: sticky",
+    ],
+    [
+      `./images/2023-4-13/Screenshot_1.png`,
+      `./images/2023-4-13/Screenshot_2.png`,
+      `./images/2023-4-13/Screenshot_3.png`,
+      `./images/2023-4-13/Screenshot_4.png`,
+      `./images/2023-4-13/Screenshot_5.png`,
+      `./images/2023-4-13/Screenshot_6.png`,
+      `./images/2023-4-13/Screenshot_7.png`,
+      `./images/2023-4-13/Screenshot_8.png`,
+      `./images/2023-4-13/Screenshot_9.png`,
+      `./images/2023-4-13/Screenshot_10.png`,
+      `./images/2023-4-13/Screenshot_11.png`,
+      `./images/2023-4-13/Screenshot_12.png`,
+      `./images/2023-4-13/Screenshot_13.png`,
+    ]
+  );
+
+projectHistoryMainContainer.innerHTML += main.innerHTML =
+  projectHistoryComponent(
+    `YourManga`,
     `8c8028baf54f6b61080c49db9391d88413c9caea`,
     `kaILrGK6lOM`,
     ["change manga cover && background dynamically (spaghetti code)"],
