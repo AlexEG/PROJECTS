@@ -6,17 +6,40 @@ projectHistoryMainContainer.innerHTML += main.innerHTML =
     `4/14`,
     `kaILrGK6lOM`,
     [
+      "On Load get random manga in banner",
+      "add 36 New Manga",
+      "rebuild Next/Back (manga banner) Functionality",
+    ],
+    [
+      `./images/2023-4-14b/Screenshot_1.png`,
+      `./images/2023-4-14b/Screenshot_2.png`,
+      `./images/2023-4-14b/Screenshot_3.png`,
+      `./images/2023-4-14b/Screenshot_4.png`,
+      `./images/2023-4-14b/Screenshot_5.png`,
+      `./images/2023-4-14b/Screenshot_6.png`,
+      `./images/2023-4-14b/Screenshot_7.png`,
+      `./images/2023-4-14b/Screenshot_8.png`,
+      `./images/2023-4-14b/Screenshot_9.png`,
+    ]
+  );
+
+projectHistoryMainContainer.innerHTML += main.innerHTML =
+  projectHistoryComponent(
+    `YourManga`,
+    `4/14`,
+    `kaILrGK6lOM`,
+    [
       "change manga cover && background dynamically (Works)",
       "add manga cards dynamically from one Object",
     ],
     [
-      `./images/2023-4-14/Screenshot_2.png`,
-      `./images/2023-4-14/Screenshot_3.png`,
-      `./images/2023-4-14/Screenshot_4.png`,
-      `./images/2023-4-14/Screenshot_5.png`,
-      `./images/2023-4-14/Screenshot_6.png`,
-      `./images/2023-4-14/Screenshot_7.png`,
-      `./images/2023-4-14/Screenshot_8.png`,
+      `./images/2023-4-14a/Screenshot_2.png`,
+      `./images/2023-4-14a/Screenshot_3.png`,
+      `./images/2023-4-14a/Screenshot_4.png`,
+      `./images/2023-4-14a/Screenshot_5.png`,
+      `./images/2023-4-14a/Screenshot_6.png`,
+      `./images/2023-4-14a/Screenshot_7.png`,
+      `./images/2023-4-14a/Screenshot_8.png`,
     ]
   );
 
