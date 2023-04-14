@@ -3,8 +3,8 @@ const main = document.querySelector("#main");
 projectHistoryMainContainer.innerHTML += main.innerHTML =
   projectHistoryComponent(
     `YourManga`,
-    `4/14`,
-    `kaILrGK6lOM`,
+    `3b9102b2221b6b769a6f5f2ae94e02443dbf06be`,
+    `C-ENQvw5C3k`,
     [
       "On Load get random manga in banner",
       "add 36 New Manga",
@@ -26,8 +26,8 @@ projectHistoryMainContainer.innerHTML += main.innerHTML =
 projectHistoryMainContainer.innerHTML += main.innerHTML =
   projectHistoryComponent(
     `YourManga`,
-    `4/14`,
-    `kaILrGK6lOM`,
+    `bdffcca615a0a81d828e857bb8d954499e587fe9`,
+    `FxJlWXRcWR4`,
     [
       "change manga cover && background dynamically (Works)",
       "add manga cards dynamically from one Object",
@@ -46,8 +46,8 @@ projectHistoryMainContainer.innerHTML += main.innerHTML =
 projectHistoryMainContainer.innerHTML += main.innerHTML =
   projectHistoryComponent(
     `YourManga`,
-    `4/13`,
-    `kaILrGK6lOM`,
+    `12db3143ef61b44c3bcba7c106f013860a2cb4d1`,
+    `IzdhpK1XRJA`,
     [
       "Add Light/Dark Mode btn+(working)",
       "sidebar is sticky using css",
