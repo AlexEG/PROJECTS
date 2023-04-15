@@ -3,6 +3,26 @@ const main = document.querySelector("#main");
 projectHistoryMainContainer.innerHTML += main.innerHTML =
   projectHistoryComponent(
     `YourManga`,
+    `0120063d5191d422af35acaff428f232927314b9`,
+    `tu7tB-L8OBE`,
+    [
+      "add Like btn",
+      "add Filter 'Your Like Manga List' (Account Icon in sidebar)",
+      "Stor Your Liked manga in local Stroage",
+    ],
+    [
+      `./images/2023-4-16a/Screenshot_1.png`,
+      `./images/2023-4-16a/Screenshot_2.png`,
+      `./images/2023-4-16a/Screenshot_3.png`,
+      `./images/2023-4-16a/Screenshot_4.png`,
+      `./images/2023-4-16a/Screenshot_5.png`,
+      `./images/2023-4-16a/Screenshot_6.png`,
+    ]
+  );
+
+projectHistoryMainContainer.innerHTML += main.innerHTML =
+  projectHistoryComponent(
+    `YourManga`,
     `c4d01877fb28e08015cc5b63a634417b4b7d0397`,
     `sox4XCrU-VY`,
     [
