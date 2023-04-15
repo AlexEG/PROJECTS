@@ -3,6 +3,36 @@ const main = document.querySelector("#main");
 projectHistoryMainContainer.innerHTML += main.innerHTML =
   projectHistoryComponent(
     `YourManga`,
+    `c4d01877fb28e08015cc5b63a634417b4b7d0397`,
+    `sox4XCrU-VY`,
+    [
+      "add Filter based on demographic",
+      "add 36 manga info",
+      "display the total number of manga on the page dynamically",
+      "edit search bar styles",
+    ],
+    [
+      `./images/2023-4-15/Screenshot_1.png`,
+      `./images/2023-4-15/Screenshot_2.png`,
+      `./images/2023-4-15/Screenshot_3.png`,
+      `./images/2023-4-15/Screenshot_4.png`,
+      `./images/2023-4-15/Screenshot_5.png`,
+      `./images/2023-4-15/Screenshot_6.png`,
+      `./images/2023-4-15/Screenshot_7.png`,
+      `./images/2023-4-15/Screenshot_8.png`,
+      `./images/2023-4-15/Screenshot_9.png`,
+      `./images/2023-4-15/Screenshot_10.png`,
+      `./images/2023-4-15/Screenshot_11.png`,
+      `./images/2023-4-15/Screenshot_12.png`,
+      `./images/2023-4-15/Screenshot_13.png`,
+      `./images/2023-4-15/Screenshot_14.png`,
+      `./images/2023-4-15/Screenshot_15.png`,
+    ]
+  );
+
+projectHistoryMainContainer.innerHTML += main.innerHTML =
+  projectHistoryComponent(
+    `YourManga`,
     `3b9102b2221b6b769a6f5f2ae94e02443dbf06be`,
     `C-ENQvw5C3k`,
     [
