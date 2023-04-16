@@ -3,6 +3,31 @@ const main = document.querySelector("#main");
 projectHistoryMainContainer.innerHTML += main.innerHTML =
   projectHistoryComponent(
     `YourManga`,
+    `55df06289fc3766c9e90446f3762fb1627f6d7f0`,
+    `JEzTcmgGEhc`,
+    [
+      "You Can now add profile image (URL only)",
+      "it's saved in local storage ",
+      "Settings Box UI (good enough)",
+    ],
+    [
+      `./images/2023-4-16b/Screenshot_1.png`,
+      `./images/2023-4-16b/Screenshot_2.png`,
+      `./images/2023-4-16b/Screenshot_3.png`,
+      `./images/2023-4-16b/Screenshot_4.png`,
+      `./images/2023-4-16b/Screenshot_5.png`,
+      `./images/2023-4-16b/Screenshot_6.png`,
+      `./images/2023-4-16b/Screenshot_7.png`,
+      `./images/2023-4-16b/Screenshot_8.png`,
+      `./images/2023-4-16b/Screenshot_9.png`,
+      `./images/2023-4-16b/Screenshot_10.png`,
+      `./images/2023-4-16b/Screenshot_11.png`,
+    ]
+  );
+
+projectHistoryMainContainer.innerHTML += main.innerHTML =
+  projectHistoryComponent(
+    `YourManga`,
     `0120063d5191d422af35acaff428f232927314b9`,
     `tu7tB-L8OBE`,
     [
