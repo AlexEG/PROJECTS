@@ -30,6 +30,12 @@ function project(projectName, wakatime, YT_id, Status, languages) {
       ).innerHTML = `${data.description}`;
     });
 
+  fetch(`https://wakatime.com/api/v1/users/AlexEG/stats/last_7_days`)
+    .then((response) => response.json())
+    .then((data) => {
+      console.log(data);
+    });
+
   //* Commits number
   fetch(
     `https://api.github.com/repos/AlexEG/${projectName}/commits?page=1&per_page=100`
