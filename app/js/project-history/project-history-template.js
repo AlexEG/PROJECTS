@@ -53,7 +53,7 @@ function projectHistoryComponent(
         )} > div.commit-description > p.commit-title > span:nth-child(2)`
       ).innerHTML = `${data.files.length}`;
 
-      // additions lines of code
+      // additions lines of code //
       document.querySelector(
         `#main > section#SHA_${SHA.slice(
           0,
@@ -147,6 +147,7 @@ function projectHistoryComponent(
             ></path>
           </svg>
         </button>
+        
         <a
           class="tooltip"
           href="https://github.com/AlexEG/${projectName}/commit/${SHA}"
