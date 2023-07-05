@@ -1,0 +1,23 @@
+body.project-history .see-auto-screenshots .screenshots {
+  // outline: 1px blue solid;
+  overflow: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 10px;
+  padding-block: 20px;
+  background-color: hsla(0, 0%, 0%, 0.871);
+
+  img {
+    width: 200px;
+    opacity: 0.8;
+    filter: grayscale(50%);
+    cursor: pointer;
+
+    &.active {
+      // outline: 1px blue solid;
+      box-shadow: 0 0 7px 3px #000000;
+      filter: saturate(120%) grayscale(0%) brightness(120%);
+      opacity: 1;
+    }
+  }
+}

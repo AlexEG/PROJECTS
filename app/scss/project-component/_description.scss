@@ -1,0 +1,17 @@
+.project__inner-container__description {
+  font-size: 1.2rem;
+  // outline: 2px red solid; ////////
+
+  h3 {
+    // outline: 2px red solid; ////////
+    padding-block: 10px;
+    color: #fff;
+  }
+
+  article {
+    // outline: 2px blue solid; ////////
+    color: hsla(0, 0%, 100%, 0.65);
+    width: 600px;
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,30 @@
+body.project-history main section .yt-autoscreenshot {
+  // outline: 2px solid magenta; ///////
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-block: 15px;
+
+  .wrapper {
+    // background-color: red; //////
+    height: 100%;
+    width: 100%;
+    max-width: 600px;
+    iframe {
+      aspect-ratio: 16/9;
+      width: 100%;
+    }
+
+    button {
+      padding: 5px 15px;
+      border: none;
+      background-color: hsla(253, 100%, 50%, 0.322);
+      text-align: center;
+      color: #fff;
+      display: block;
+      margin-inline: auto;
+      cursor: pointer;
+      margin-top: 5px;
+    }
+  }
+}

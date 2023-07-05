@@ -1,0 +1,58 @@
+body.project-history main section .commit-description {
+  // outline: 2px solid yellow; ///////
+  font-family: "Roboto", sans-serif;
+  padding: 10px 20px;
+  .commit-time {
+    color: #fff;
+    text-align: center;
+    padding-block: 5px;
+    font-size: 1rem;
+  }
+  .commit-title {
+    color: hsla(0, 0%, 100%, 0.5);
+    text-align: left;
+    padding-block: 5px;
+    font-size: 1rem;
+    svg {
+      width: 10px;
+      filter: invert(50%);
+      margin-inline: 5px;
+    }
+    span {
+      font-weight: 600;
+      margin-inline: 15px 5px;
+    }
+
+    span:nth-of-type(1) {
+      color: hsl(249, 100%, 63%);
+      margin-inline: 0 5px;
+    }
+    span:nth-of-type(2) {
+      color: hsl(120, 100%, 40%);
+    }
+    span:nth-of-type(3) {
+      color: hsl(0, 100%, 40%);
+    }
+  }
+
+  &__summary {
+    ul {
+      list-style: none;
+      color: hsla(0, 0%, 100%, 0.85);
+
+      li {
+        margin-block: 10px;
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          transform: translate(-100%, 50%);
+          width: 0;
+          height: 0;
+          border: 5px solid transparent;
+          border-left-color: hsla(305, 100%, 43%, 0.849);
+        }
+      }
+    }
+  }
+}

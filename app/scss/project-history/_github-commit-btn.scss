@@ -1,0 +1,108 @@
+body.project-history main section .commit-description .github-commit {
+  // outline: 1px solid red; //////
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  margin-block: 20px;
+  background-color: hsla(0, 0%, 100%, 0.04);
+  border-radius: 10px;
+  transition: box-shadow 200ms ease-in-out;
+  &:hover {
+    box-shadow: 0 0 5px 0 rgb(225, 0, 255);
+  }
+
+  h2 {
+    // outline: 1px solid red; //////
+    font-size: 1.2rem;
+    color: hsla(0, 0%, 100%, 0.8);
+    line-height: 1.7;
+  }
+  &__view-btn {
+    // outline: 1px solid rgb(43, 255, 0); //////
+    height: 35px;
+
+    .tooltip:hover {
+      &::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 25px);
+        width: 0;
+        height: 0;
+        border: 5px solid transparent;
+        border-bottom-color: hsla(0, 0%, 100%, 0.3);
+      }
+
+      &::after {
+        position: absolute;
+        white-space: nowrap;
+        color: #fff;
+        background-color: hsla(0, 0%, 100%, 0.3);
+        padding: 3px 10px;
+        font-size: 0.8rem;
+        border-radius: 2px;
+        transform: translate(-100%, 35px);
+      }
+    }
+
+    .tooltip {
+      // outline: 1px solid red; //////
+
+      transition: background-color 200ms;
+      &:hover {
+        background-color: hsla(0, 0%, 72%, 0.26);
+      }
+    }
+
+    button,
+    a:nth-of-type(1),
+    a:nth-of-type(2) {
+      // outline: 1px solid red; //////
+
+      cursor: pointer;
+      background-color: transparent;
+      position: relative;
+      border: 1px solid hsla(0, 0%, 72%, 0.26);
+      padding: 5px 15px;
+      height: 32px;
+    }
+
+    svg {
+      // outline: 1px solid red; //////
+
+      filter: invert(50%);
+      height: 16px;
+      width: 16px;
+    }
+
+    svg.svg-copied {
+      display: none;
+      filter: invert(50%) sepia(93%) saturate(1352%) hue-rotate(87deg)
+        brightness(119%) contrast(119%);
+    }
+
+    // TODO  copy btn svg
+
+    button {
+      border-radius: 5px 0 0 5px;
+      &:hover.tooltip::after {
+        content: "Copy the full SHA";
+      }
+    }
+
+    a:nth-of-type(1) {
+      color: rgb(255, 0, 234);
+      &:hover.tooltip::after {
+        content: "View commit details";
+      }
+    }
+
+    a:nth-of-type(2) {
+      border-radius: 0 5px 5px 0;
+      &:hover.tooltip::after {
+        content: "Browse the repository at this point in the history";
+      }
+    }
+  }
+}
