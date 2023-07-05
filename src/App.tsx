@@ -9,6 +9,7 @@ function App() {
   return (
     <>
       <div className="bg-pink-700 h-screen w-screen"></div>
+      <div className="bg-pink-700 h-screen w-screen"></div>
       
     </>
   )
